@@ -1,0 +1,113 @@
+:root{
+    --color-rosafuerte:#fe5d9f;
+    --color-fondoblanco:#FFFFFF;
+    --color-fondo1:#f1e4f3;
+    --color-fondo2:#f4bbd3;
+    --color-banner:#fe5d9f;
+    --color-sombra:#d6d2d2;
+    --color-oscuro:#A08D8D;
+    --colorletra-claro:var(--color-fondoblanco);
+    --colorletra-oscuro:var(--color-banner)
+    --fuente-titulo:"Archivo Black", sans-serif;
+    --fuente-cuerpo:'Lato', sans-serif;
+}
+html{scroll-behavior: smooth;}
+a{text-decoration: none;}
+
+body{
+    h1{font-family: var(--fuente-titulo);
+    }
+    b{color:var(--color-rosafuerte)}
+    h3{font-family: var(--fuente-titulo);}
+    font-family: var(--fuente-cuerpo);
+  
+
+}
+ header{
+
+
+    background-image:linear-gradient(to bottom right, var(--color-banner),var(--color-fondo2));
+    margin: 0;
+     box-shadow: 2px 2px 8px var(--color-oscuro);
+     position:fixed;
+     left: 8px;
+     right: 8px;
+     top:0;
+     z-index: 1000;
+     flex-direction:row;
+     display:flex;
+     justify-content: space-between;
+     align-items: center;
+     h4{color:var(--color-fondoblanco)}
+    
+
+     nav{
+    text-decoration:none;
+     
+     padding-inline: 20px;
+     margin-left: 5px;
+     margin-right: 5px;
+     border-radius: 15px;
+     transition:all 0,3s ease;
+     a{color:var(--color-fondoblanco);}
+      
+    }
+    nav :hover {
+        background-color: var(--color-fondoblanco);
+        color:var(--color-rosafuerte);
+        transform: translateY(-2px);
+    
+    }
+ }
+
+#inicio{
+     background-image:linear-gradient(to bottom right, var(--color-banner),var(--color-fondo2));
+    padding:170px;
+    text-align: center;
+    h1{ color:var(--color-fondoblanco);
+    margin:0;
+    width: 100%;
+    }
+    h3{color:var(--color-fondoblanco);
+    margin:0;}
+    p{color:var(--color-fondoblanco);}
+    a{background-color: var(--color-fondoblanco);
+    color:var(--color-rosafuerte);
+    padding:10px;
+    border-radius:15px ;
+    font-weight: 500;
+    }
+
+}
+#sobreMi{
+    background-color:var(--color-fondo1);
+    display:flex;
+    justify-content: center;
+    h3{color:var(--color-rosafuerte);
+    text-align: center;}
+    padding: 40px;
+    img{width: 150px;
+    large: 150px;
+    border-radius:100px ;
+    }
+
+}
+
+#habilidades{
+    background-color: var(--color-fondo2);
+
+}
+
+#proyectos{
+    background-color: var(--color-fondo1);
+}
+
+#contacto{
+    background-color: var(--color-fondo2);
+}
+
+footer{
+    background-color: var(--color-oscuro);
+
+
+}
