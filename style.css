@@ -11,6 +11,7 @@
     --fuente-titulo:"Archivo Black", sans-serif;
     --fuente-cuerpo:'Lato', sans-serif;
 }
+
 html{scroll-behavior: smooth;}
 a{text-decoration: none;}
 
@@ -20,18 +21,18 @@ body{
     b{color:var(--color-rosafuerte)}
     h3{font-family: var(--fuente-titulo);}
     font-family: var(--fuente-cuerpo);
+    margin:0px;
   
 
 }
  header{
 
-
     background-image:linear-gradient(to bottom right, var(--color-banner),var(--color-fondo2));
     margin: 0;
      box-shadow: 2px 2px 8px var(--color-oscuro);
      position:fixed;
-     left: 8px;
-     right: 8px;
+     left: 0px;
+     right: 0px;
      top:0;
      z-index: 1000;
      flex-direction:row;
@@ -39,14 +40,13 @@ body{
      justify-content: space-between;
      align-items: center;
      h4{color:var(--color-fondoblanco)}
-    
 
      nav{
     text-decoration:none;
      
      padding-inline: 20px;
-     margin-left: 5px;
-     margin-right: 5px;
+     margin-left: 0px;
+     margin-right: 0px;
      border-radius: 15px;
      transition:all 0,3s ease;
      a{color:var(--color-fondoblanco);}
@@ -65,8 +65,8 @@ body{
     padding:170px;
     text-align: center;
     h1{ color:var(--color-fondoblanco);
-    margin:0;
     width: 100%;
+    margin:0px;
     }
     h3{color:var(--color-fondoblanco);
     margin:0;}
@@ -77,37 +77,71 @@ body{
     border-radius:15px ;
     font-weight: 500;
     }
-
 }
+
+.titulo{color:var(--color-rosafuerte);
+    text-align: center;
+margin-bottom: 20px;
+border-bottom: 2px solid var(--color-rosafuerte);
+width:fit-content;
+margin: 0 auto 35px auto;
+}
+
 #sobreMi{
     background-color:var(--color-fondo1);
     display:flex;
+    flex-direction: column;
     justify-content: center;
-    h3{color:var(--color-rosafuerte);
-    text-align: center;}
-    padding: 40px;
-    img{width: 150px;
-    large: 150px;
-    border-radius:100px ;
+    padding: 80px;
+    
+    }
+    .mi-info{
+        display:flex;
+        flex-direction: row;
+        align-items: center;
+        gap:30px;
+        width: 100%;
+    }
+    .textosobremi{
+         display:flex;
+         flex-direction: column;
+         gap: 15px;
+         text-align: justify;
+         line-height: 1.6;
+         width: 100%;
     }
 
-}
+    #sobreMi img{
+     width: 300px;
+    height: 300px;
+    border-radius:100px ;
+    flex-wrap: wrap;}
 
 #habilidades{
     background-color: var(--color-fondo2);
+    margin:0px;
+    padding:70px;
 
 }
 
 #proyectos{
     background-color: var(--color-fondo1);
+    margin:0px;
+    padding:50px;
 }
 
 #contacto{
     background-color: var(--color-fondo2);
+    margin:0;
+    padding:50px;
 }
 
 footer{
     background-color: var(--color-oscuro);
+    margin:0;
+    padding:10px;
+    text-align: center;
+    color:var(--color-fondoblanco);
 
 
 }
