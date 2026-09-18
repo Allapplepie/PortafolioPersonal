@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <title>Portafolio-Allison</title>
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
      <link rel="stylesheet" href="style.css">
+     <linl rel="stylesheet" href="responsive.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+   
 </head>
 
 <body>
@@ -37,7 +40,7 @@
         <section id="sobreMi">
             <h3 class="titulo">Sobre mí</h3>
 
-            <div class="mi-info"">
+            <div class="mi-info">
 
                 <img src="assets/mifoto.jpeg" alt="Mi foto Personal">
             
@@ -52,16 +55,51 @@
 
         <section id="habilidades">
             <h3 class="titulo"> Mis habilidades</h3>
-            <div class="capacidades">
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-
-
-              </ul>
-
+           
+            <ul class="habilidades-contenedor">
+        
+        <!-- Tarjeta 1: HTML -->
+        <li class="tarjeta-habilidad" onclick="girarTarjeta(this)">
+            <div class="tarjeta-interior">
+                <div class="cara-adelante">
+                    <span class="material-symbols-outlined">code</span>
+                    <h4>HTML</h4>
+                </div>
+                <div class="cara-atras">
+                    <p>80% de conocimiento</p>
+                </div>
             </div>
+        </li>
+
+        <!-- Tarjeta 2: CSS -->
+        <li class="tarjeta-habilidad" onclick="girarTarjeta(this)">
+            <div class="tarjeta-interior">
+                <div class="cara-adelante">
+                    <span class="material-symbols-outlined">palette</span>
+                    <h4>CSS</h4>
+                </div>
+                <div class="cara-atras">
+                    <p>75% de conocimiento</p>
+                </div>
+            </div>
+        </li>
+
+        <!-- Tarjeta 3: JavaScript -->
+        <li class="tarjeta-habilidad" onclick="girarTarjeta(this)">
+            <div class="tarjeta-interior">
+                <div class="cara-adelante">
+                    <span class="material-symbols-outlined">terminal</span>
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="cara-atras">
+                    <p>60% de conocimiento</p>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
+       
 
 
         </section>
@@ -87,6 +125,7 @@
 
         <section id="contacto">
             <h3 class="titulo">Contactame</h3>
+    <div class="contacto-flex">
         <div class="informacion">
             <ul>
                 <li>Email
@@ -96,7 +135,7 @@
                 <p>+57 3002167465</p>
                 </li>
                 <li>Ubicacion
-                    Colombia-Barranquilla
+                    <p>Colombia-Barranquilla</p>
                 </li>
             </ul>
     
@@ -126,7 +165,7 @@
     </fieldset>
     <button>Enviar Mensaje</button>
         </form>
-        
+    </div>
         </section>
     </main>
 

@@ -1,0 +1,95 @@
+/* ==========================================================================
+   📱 DISEÑO TOTALMENTE RESPONSIVO (CONEXIÓN INTEGRADA CON JAVASCRIPT)
+   ========================================================================== */
+@media (max-width: 768px) {
+    
+    /* --- 🍔 INTERACTIVIDAD DEL MENÚ HAMBURGUESA --- */
+    
+    /* Hace aparecer el botón de las tres líneas en celulares */
+    .nav-toggle {
+        display: block !important;
+    }
+    
+    /* Oculta el menú horizontal y lo prepara para desplegarse verticalmente */
+    .nav-menu {
+        display: none !important; 
+        flex-direction: column !important;
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 100% !important;
+        background-color: var(--color-fondo1) !important;
+        padding: 20px 0 !important;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+        z-index: 1000 !important;
+    }
+
+    .nav-menu a {
+        padding: 12px 20px !important;
+        width: 100% !important;
+        text-align: center !important;
+        margin-left: 0 !important;
+    }
+
+    /* 🚀 LA CLASE MÁGICA: El JavaScript inyectará esto al dar clic */
+    .nav-menu_visible {
+        display: flex !important; /* Muestra el menú móvil al instante */
+    }
+
+    /* --- 📱 ADAPTACIÓN DE LAS SECCIONES A COLUMNA --- */
+    
+    /* 1. Inicio */
+    #inicio {
+        padding: 80px 20px !important;
+    }
+    
+    #inicio h1 {
+        font-size: 28px !important;
+    }
+
+    /* 2. Sobre mí */
+    .mi-info {
+        flex-direction: column !important;
+        gap: 20px !important;
+        text-align: center !important;
+    }
+
+    /* 3. Habilidades */
+    .habilidades-contenedor {
+        flex-direction: row !important;
+        justify-content: center !important;
+        gap: 15px !important;
+    }
+
+    /* 4. Proyectos */
+    .proyecto1y2 ul {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+    .proyecto1y2 ul li:first-child {
+        border-right: none !important;
+        border-bottom: 2px solid var(--color-rosafuerte) !important;
+        padding-bottom: 30px !important;
+    }
+
+    /* 5. Contacto */
+    .contacto-flex {
+        flex-direction: column !important;
+        gap: 40px !important;
+    }
+
+    .informacion {
+        border-right: none !important;
+        border-bottom: 2px solid var(--color-rosafuerte) !important;
+        padding: 0 0 30px 0 !important;
+    }
+
+    form {
+        padding: 20px 0 0 0 !important;
+    }
+    
+    form button {
+        align-self: center !important;
+    }
+}
